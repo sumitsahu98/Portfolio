@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* gradient bg */
-  color: white;
+  background: linear-gradient(135deg, #a8edea, #fed6e3); /* light gradient */
+  color: #333;
   padding: 20px;
 }
 
@@ -19,19 +19,19 @@
 }
 
 .hero h1 .highlight {
-  color: #00aaff;
+  color: #ff6f61; /* soft accent color */
 }
 
 .hero h2 {
   font-size: 26px;
   margin-bottom: 15px;
   font-weight: 400;
-  color: #eee;
+  color: #555;
 }
 
 .hero p {
   font-size: 18px;
-  color: #ccc;
+  color: #666;
   margin-bottom: 25px;
   line-height: 1.6;
 }
@@ -44,7 +44,7 @@
 }
 
 .btn {
-  background: #00aaff;
+  background: #ff6f61;
   color: white;
   padding: 12px 20px;
   border-radius: 5px;
@@ -54,12 +54,12 @@
 }
 
 .btn:hover {
-  background: #0077cc;
+  background: #ff4c3b;
 }
 
 .btn-outline {
-  border: 2px solid #00aaff;
-  color: #00aaff;
+  border: 2px solid #ff6f61;
+  color: #ff6f61;
   padding: 10px 18px;
   border-radius: 5px;
   text-decoration: none;
@@ -68,6 +68,6 @@
 }
 
 .btn-outline:hover {
-  background: #00aaff;
+  background: #ff6f61;
   color: white;
 }
