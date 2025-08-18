@@ -15,7 +15,7 @@
 
 /* Sticky background on scroll */
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.95); /* Light transparent */
+  background: rgba(41, 40, 40, 0.95); /* Light transparent */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
 }
@@ -47,7 +47,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #333; /* Dark text for light theme */
+  color: #eee7e7; /* Dark text for light theme */
   font-size: 1rem;
   font-weight: 500;
   transition: color 0.3s ease;

@@ -1,29 +1,61 @@
 .projects {
   padding: 100px 20px;
-  background: #fff;
+  background: linear-gradient(135deg, #0a0a0a, #141e30, #243b55); /* Black + Blue-Purple mix */
   text-align: center;
+  color: #f1f1f1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated glowing overlay */
+.projects::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0,170,255,0.15), rgba(162,0,255,0.1), transparent 70%);
+  animation: floatingBg 15s linear infinite;
+  z-index: 0;
+}
+
+@keyframes floatingBg {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(60px, 60px) rotate(180deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
 }
 
 .projects-container {
   max-width: 1100px;
   margin: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .projects h2 {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 40px;
   color: #00aaff;
   position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .projects h2::after {
   content: "";
   display: block;
-  width: 70px;
+  width: 80px;
   height: 3px;
-  background: #00aaff;
+  background: linear-gradient(90deg, #00aaff, #a200ff); /* Blue → Purple line */
   margin: 10px auto 0;
   border-radius: 2px;
+  animation: pulseLine 2s infinite alternate;
+}
+
+@keyframes pulseLine {
+  from { width: 50px; opacity: 0.6; }
+  to { width: 120px; opacity: 1; }
 }
 
 .project-grid {
@@ -33,36 +65,48 @@
 }
 
 .project-card {
-  background: #f9f9f9;
+  background: rgba(255, 255, 255, 0.05);
   padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.6s ease;
   cursor: pointer;
   overflow: hidden;
   position: relative;
+  backdrop-filter: blur(6px);
 }
 
 .project-card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0px 12px 30px rgba(0, 170, 255, 0.4), 0px 12px 30px rgba(162, 0, 255, 0.4);
+  background: linear-gradient(135deg, rgba(0,170,255,0.15), rgba(162,0,255,0.15));
 }
 
 .project-content h3 {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 10px;
-  color: #0077cc;
+  color: #00aaff;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover h3 {
+  color: #a200ff; /* shifts to purple on hover */
 }
 
 .project-content p {
   font-size: 15px;
-  color: #444;
+  color: #ccc;
   margin-bottom: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover p {
+  opacity: 0.95;
 }
 
 .project-content .tech {
   font-size: 14px;
-  color: #666;
+  color: #aaa;
   margin-bottom: 15px;
 }
 
@@ -71,12 +115,13 @@
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn,
 .btn-outline {
   display: inline-block;
-  padding: 10px 18px;
+  padding: 10px 20px;
   border-radius: 6px;
   font-size: 14px;
   font-weight: bold;
@@ -85,15 +130,15 @@
 }
 
 .btn {
-  background: #00aaff;
+  background: linear-gradient(90deg, #00aaff, #a200ff);
   color: white;
-  box-shadow: 0 4px 8px rgba(0, 170, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 170, 255, 0.4), 0 4px 12px rgba(162, 0, 255, 0.3);
 }
 
 .btn:hover {
-  background: #0077cc;
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 170, 255, 0.5);
+  background: linear-gradient(90deg, #0077cc, #7a00cc);
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 170, 255, 0.6), 0 6px 16px rgba(162, 0, 255, 0.5);
 }
 
 .btn-outline {
@@ -103,7 +148,8 @@
 }
 
 .btn-outline:hover {
-  background: #00aaff;
+  background: linear-gradient(90deg, #00aaff, #a200ff);
   color: white;
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 170, 255, 0.5), 0 6px 16px rgba(162, 0, 255, 0.5);
 }

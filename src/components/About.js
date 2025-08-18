@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
-import profilePic from "../assets/profile.jpg"; // replace with your image
+import profilePic from "../assets/profile.jpg";
+import { GraduationCap, Target } from "lucide-react"; // icons
 
 function About() {
   return (
@@ -36,12 +37,18 @@ function About() {
           {/* Info Cards */}
           <div className="about-info fade-in delay-4">
             <div className="info-card">
-              <h4>🎓 Education</h4>
-              <p>SISTec, Bhopal — B.Tech CSE (2022–2026)</p>
+              <GraduationCap className="info-icon" />
+              <div>
+                <h4>🎓 Education</h4>
+                <p>SISTec, Bhopal — B.Tech CSE (2022–2026)</p>
+              </div>
             </div>
             <div className="info-card">
-              <h4>💼 Goal</h4>
-              <p>To become a Software Developer and contribute to impactful projects</p>
+              <Target className="info-icon" />
+              <div>
+                <h4>💼 Goal</h4>
+                <p>To become a Software Developer and contribute to impactful projects</p>
+              </div>
             </div>
           </div>
 

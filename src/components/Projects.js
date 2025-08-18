@@ -8,15 +8,15 @@ function Projects() {
       description:
         "A real-time system to detect and count vehicles using Python, OpenCV, and Machine Learning. Helps in traffic monitoring and analysis.",
       tech: "Python, OpenCV, NumPy, Computer Vision",
-      github: "https://github.com/sumitsahu98/Real-time-vehicle-detectiona-and-counting-using-openCV", // replace with real repo
-      demo: "https://travel-world-travel.netlify.app/home",
+      github: "https://github.com/sumitsahu98/Real-time-vehicle-detectiona-and-counting-using-openCV", 
+      demo: "#",
     },
     {
       title: "Travel Booking Website",
       description:
         "A MERN-based travel booking platform where users can explore destinations, view tour details, and book packages online.",
       tech: "React, Node.js, MongoDB, Express",
-      github: "https://github.com/sumitsahu98", // replace with real repo
+      github: "https://github.com/sumitsahu98/Travel-World", 
       demo: "#",
     },
     {
@@ -24,7 +24,7 @@ function Projects() {
       description:
         "A Java Swing + MySQL application to manage hotel reservations, customer data, and payments.",
       tech: "Java Swing, MySQL",
-      github: "https://github.com/sumitsahu98", // replace with real repo
+      github: "https://github.com/sumitsahu98", 
       demo: "#",
     },
     {
@@ -32,8 +32,16 @@ function Projects() {
       description:
         "An interactive kids' website with games, quizzes, and learning materials. Designed with colorful layouts and animations.",
       tech: "HTML, CSS, JavaScript",
-      github: "https://github.com/sumitsahu98", // replace with real repo
+      github: "https://github.com/sumitsahu98", 
       demo: "#",
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "A personal portfolio website showcasing my projects, skills, and experience. Built with React and deployed on Netlify.",
+      tech: "React, CSS, Netlify",
+      github: "https://github.com/sumitsahu98/Portfolio",
+      demo: "https://portpolio-sumit-sahu.netlify.app/",
     },
   ];
 

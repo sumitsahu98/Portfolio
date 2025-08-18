@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactTyped } from "react-typed";
 import "./Hero.css";
 
 function Hero() {
@@ -6,11 +7,25 @@ function Hero() {
     <section id="home" className="hero">
       <div className="hero-content">
         <h1>Hello, I'm <span className="highlight">Sumit Sahu</span></h1>
-        <h2>Aspiring MERN Stack Developer</h2>
+        
+        <h2>
+          <ReactTyped
+            strings={[
+              "Aspiring MERN Stack Developer",
+              "Passionate Problem Solver",
+              "Full-Stack Learner 🚀"
+            ]}
+            typeSpeed={60}
+            backSpeed={40}
+            loop
+          />
+        </h2>
+
         <p>
           Passionate about building full-stack applications, solving DSA problems, 
-          and creating impactful solutions with modern technologies 🚀
+          and creating impactful solutions with modern technologies.
         </p>
+
         <div className="hero-buttons">
           <a href="/resume.pdf" className="btn" target="_blank" rel="noopener noreferrer">
             Download Resume
