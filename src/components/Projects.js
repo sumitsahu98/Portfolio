@@ -9,7 +9,7 @@ function Projects() {
         "A real-time system to detect and count vehicles using Python, OpenCV, and Machine Learning. Helps in traffic monitoring and analysis.",
       tech: "Python, OpenCV, NumPy, Computer Vision",
       github: "https://github.com/sumitsahu98/Real-time-vehicle-detectiona-and-counting-using-openCV", // replace with real repo
-      demo: "#",
+      demo: "https://travel-world-travel.netlify.app/home",
     },
     {
       title: "Travel Booking Website",
